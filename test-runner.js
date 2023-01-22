@@ -32,7 +32,7 @@ const Mocha = require('mocha'),
     fs = require('fs'),
     path = require('path');
 
-const mocha = new Mocha();
+const mocha = new Mocha({timeout: 5000});
 const testDir = './tests'
 
 

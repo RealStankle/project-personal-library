@@ -78,6 +78,10 @@ module.exports = function (app) {
           }
         );
 
+        if (!book) {
+          throw new Error();
+        }
+
         res.status(200).json(book);
       } catch (error) {
         res.send('no book exists');
